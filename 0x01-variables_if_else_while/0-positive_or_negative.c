@@ -1,26 +1,76 @@
-
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- * main -assigns arandom number to n and printsif positive,zero, or negative
- * return: 0
+ * main - assigns a random number to n and prints if positive, zero, or negative
+ * Return: 0
  */
-int main (void)
+int main(void)
 {
-	int n,
-	    srand (time(0));
-	n=rand()-Rand_MAX /2;
+    int n;
 
-	if(n>0)
-		printf("%d is positive\n",n);
-	else if (n==0)
-		printf"%d is is Zero\n",n);
-	else
-		printf("%d is negative\n",n);
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
 
-	return(0);
+    if (n > 0)
+        printf("%d is positive\n", n);
+    else if (n == 0)
+        printf("%d is zero\n", n);
+    else
+        printf("%d is negative\n", n);
 
+    return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
