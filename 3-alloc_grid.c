@@ -1,3 +1,4 @@
+cat > /set-low_level_programming/malloc_free/3-alloc_grid.c << 'EOF'
 #include "main.h"
 #include <stdlib.h>
 
@@ -18,11 +19,8 @@ int **alloc_grid(int width, int height)
         grid[i] = malloc(sizeof(int) * width);
         if (grid[i] == NULL)
         {
-            while (i >= 0)
-            {
-                free(grid[i]);
-                i--;
-            }
+            for (j = 0; j < i; j++)
+                free(grid[j]);
             free(grid);
             return (NULL);
         }
@@ -33,3 +31,4 @@ int **alloc_grid(int width, int height)
 
     return (grid);
 }
+EOF
