@@ -1,4 +1,3 @@
-cat > /set-low_level_programming/malloc_free/3-alloc_grid.c << 'EOF'
 #include "main.h"
 #include <stdlib.h>
 
@@ -31,4 +30,3 @@ int **alloc_grid(int width, int height)
 
     return (grid);
 }
-EOF

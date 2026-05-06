@@ -1,4 +1,3 @@
-cat > /set-low_level_programming/malloc_free/0-create_array.c << 'EOF'
 #include "main.h"
 #include <stdlib.h>
 
@@ -19,4 +18,3 @@ char *create_array(unsigned int size, char c)
 
     return (arr);
 }
-EOF
