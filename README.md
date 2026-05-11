@@ -1,1 +1,1 @@
-More malloc and free project
+This repository contains low-level programming projects.
