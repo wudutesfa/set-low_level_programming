@@ -7,13 +7,13 @@
  */
 void free_list(list_t *head)
 {
-    list_t *temp;
+	list_t *temp;
 
-    while (head != NULL)
-    {
-        temp = head->next;
-        free(head->str); /* Free the strdup'd string first */
-        free(head);      /* Free the node */
-        head = temp;
-    }
+	while (head != NULL)
+	{
+		temp = head->next;
+		free(head->str); /* Free the strdup'd string first */
+		free(head);	  /* Free the node */
+		head = temp;
+	}
 }
